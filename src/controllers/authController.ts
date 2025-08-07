@@ -40,7 +40,6 @@ export const loginUser = async (req: Request, res: Response) => {
         name: userInfo.name,
         email: userInfo.email,
         id: userInfo.id,
-        createAt: userInfo.createdAt,
       },
     });
   } catch (err) {
@@ -78,7 +77,6 @@ export const registerUser = async (req: Request, res: Response) => {
         id: newUser.id,
         name: newUser.name,
         email: newUser.email,
-        createdAt: newUser.createdAt,
       },
     });
   } catch (err) {
